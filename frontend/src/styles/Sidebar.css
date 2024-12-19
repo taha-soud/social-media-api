@@ -1,0 +1,27 @@
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 64px);
+  background-color: var(--secondary-color);
+  padding: 20px;
+  position: sticky;
+  top: 64px;
+  color: var(--text-color);
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: var(--hover-color);
+}

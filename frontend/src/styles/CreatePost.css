@@ -1,0 +1,79 @@
+.create-post {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  padding: 15px; /* Reduced padding for a more compact appearance */
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  max-width: 600px; /* Keep it compact */
+}
+
+.create-post:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+.post-input {
+  margin-bottom: 10px; /* Reduced spacing below the input */
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+
+/* Actions Section (Media Icons + Post Button) */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px; /* Reduced spacing above the actions */
+}
+
+.media-icons {
+  display: flex;
+  gap: 8px; /* Reduced gap between icons */
+}
+
+.media-icons .MuiIconButton-root {
+  color: var(--accent-color);
+  font-size: 18px; /* Slightly smaller icons */
+  transition: color 0.3s ease;
+}
+
+.media-icons .MuiIconButton-root:hover {
+  color: var(--hover-color);
+}
+
+/* Post Button */
+.post-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 6px 16px; /* Reduced button size */
+  font-size: 14px; /* Smaller font size for the button */
+  border-radius: 16px;
+}
+
+.post-button:hover {
+  background-color: var(--hover-color);
+}
+/* Image Preview Section */
+.image-preview {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.preview-img {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  max-height: 300px; /* Limit the height of the image */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.emoji-picker {
+  position: absolute;
+  bottom: 70px; /* Adjust the position as needed */
+  left: 20px;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

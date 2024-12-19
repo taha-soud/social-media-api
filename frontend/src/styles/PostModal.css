@@ -1,0 +1,137 @@
+.post-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.post-modal {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-username {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.post-content {
+  margin-top: 10px;
+}
+
+.post-content p {
+  font-size: 14px;
+  color: #333;
+}
+
+.post-content img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.post-actions button:hover {
+  text-decoration: underline;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-list {
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.comment-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.comment-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.comment-input button {
+  margin-left: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-input button:hover {
+  background-color: #2980b9;
+}
